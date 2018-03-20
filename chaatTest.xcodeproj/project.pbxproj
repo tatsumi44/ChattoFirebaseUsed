@@ -18,6 +18,9 @@
 		B99B47EA206003CA00D7335F /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = B99B47E9206003C900D7335F /* logo.png */; };
 		B99B47EC206003FB00D7335F /* Screen Shot 2017-07-05 at 5.05.58 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = B99B47EB206003FB00D7335F /* Screen Shot 2017-07-05 at 5.05.58 PM.png */; };
 		B99B47EE206006CD00D7335F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B99B47ED206006CD00D7335F /* GoogleService-Info.plist */; };
+		B99B47F420601F5100D7335F /* SginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B47F320601F5100D7335F /* SginInViewController.swift */; };
+		B99B47F620601F6900D7335F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B47F520601F6900D7335F /* SignUpViewController.swift */; };
+		B99B47F8206025E000D7335F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99B47F7206025E000D7335F /* Helper.swift */; };
 		B9FCD6DC205A3BF30022EB9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9FCD6DB205A3BF30022EB9E /* AppDelegate.swift */; };
 		B9FCD6E1205A3BF30022EB9E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FCD6DF205A3BF30022EB9E /* Main.storyboard */; };
 		B9FCD6E3205A3BF30022EB9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FCD6E2205A3BF30022EB9E /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		B99B47E9206003C900D7335F /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		B99B47EB206003FB00D7335F /* Screen Shot 2017-07-05 at 5.05.58 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2017-07-05 at 5.05.58 PM.png"; sourceTree = "<group>"; };
 		B99B47ED206006CD00D7335F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B99B47F320601F5100D7335F /* SginInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SginInViewController.swift; sourceTree = "<group>"; };
+		B99B47F520601F6900D7335F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		B99B47F7206025E000D7335F /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		B9FCD6D8205A3BF30022EB9E /* chaatTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chaatTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FCD6DB205A3BF30022EB9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B9FCD6E0205A3BF30022EB9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,7 +116,6 @@
 				B9143F7C205F89FD0000C03C /* Decorator.swift */,
 				B9FCD6EF205A4C570022EB9E /* TextMessage */,
 				B99B47E2205FAE7500D7335F /* PhotoMessage */,
-				B9FCD6DF205A3BF30022EB9E /* Main.storyboard */,
 				B99B47E9206003C900D7335F /* logo.png */,
 				B99B47EB206003FB00D7335F /* Screen Shot 2017-07-05 at 5.05.58 PM.png */,
 				B9FCD6E4205A3BF30022EB9E /* LaunchScreen.storyboard */,
@@ -118,6 +123,10 @@
 				B9FCD6E2205A3BF30022EB9E /* Assets.xcassets */,
 				B9FCD6E7205A3BF30022EB9E /* Info.plist */,
 				B99B47ED206006CD00D7335F /* GoogleService-Info.plist */,
+				B9FCD6DF205A3BF30022EB9E /* Main.storyboard */,
+				B99B47F320601F5100D7335F /* SginInViewController.swift */,
+				B99B47F520601F6900D7335F /* SignUpViewController.swift */,
+				B99B47F7206025E000D7335F /* Helper.swift */,
 			);
 			path = chaatTest;
 			sourceTree = "<group>";
@@ -221,17 +230,31 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-chaatTest/Pods-chaatTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
 				"${BUILT_PRODUCTS_DIR}/Chatto/Chatto.framework",
 				"${BUILT_PRODUCTS_DIR}/ChattoAdditions/ChattoAdditions.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Chatto.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChattoAdditions.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -280,6 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B99B47F420601F5100D7335F /* SginInViewController.swift in Sources */,
+				B99B47F8206025E000D7335F /* Helper.swift in Sources */,
 				B99B47E6205FB06500D7335F /* PhotoBuilder.swift in Sources */,
 				B99B47E4205FAEBC00D7335F /* PhotoModel.swift in Sources */,
 				B99B47E8205FB5DB00D7335F /* PhotoHandler.swift in Sources */,
@@ -290,6 +315,7 @@
 				B9143F7B205F840C0000C03C /* ChatItemController.swift in Sources */,
 				B9143F79205F832E0000C03C /* Datasourse.swift in Sources */,
 				B9FCD6DC205A3BF30022EB9E /* AppDelegate.swift in Sources */,
+				B99B47F620601F6900D7335F /* SignUpViewController.swift in Sources */,
 				B9143F7D205F89FD0000C03C /* Decorator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
